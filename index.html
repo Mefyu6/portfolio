@@ -7,6 +7,8 @@
     <meta name="keywords" content="strony domowe, html, .....">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material Icon CDN -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Andika&family=Caveat+Brush&family=Open+Sans:ital,wght@0,400;0,600;0,800;1,700&display=swap"
@@ -24,7 +26,7 @@
                 <span class="header__logo-name">Mateusz Rompski</span>
             </div>
             <nav class="header__nav">
-                
+                <div id="hamburger__menu">
                 <ul class="header__links">
                     <li>
                         <a href="./index.html#top" class="header__link">Home</a>
@@ -41,19 +43,13 @@
                     <li><a href="./index.html#contact" class="header__link">Kontakt</a>
                     </li>
                 </ul>
-            </nav>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
-              <script> myFunction() 
-                var x = document.getElementsByClassName("header__link");
-                if (x.style.display === "block") {
-                  x.style.display = "none";
-                } else {
-                  x.style.display = "block";
-                }
-              
-              </script>
+                <button class="hamburger">
+                    <!-- material icons https://material.io/resources/icons/ -->
+                    <i class="menuIcon material-icons">menu</i>
+                    <i class="closeIcon material-icons">close</i>
+                  </button>
+                </div>
+            </nav>         
         </div>
         
     </header>
@@ -248,7 +244,7 @@
             </div>
         </div>
     </footer>
-    <script src="https://kit.fontawesome.com/b8b97d1538.js" crossorigin="anonymous">     
+    <script src="main.js" src="https://kit.fontawesome.com/b8b97d1538.js" crossorigin="anonymous">   
     </script>
 </body>
 
