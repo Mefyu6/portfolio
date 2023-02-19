@@ -14,11 +14,39 @@ breakpoints
 1800 -    duży komp
 */
 
-@media (max-width: 600px) {
-  .hero {
-    width: 150%;
-    background-color: red;
-  }
+@media only screen and (max-width: 600px) {
+
+/*Nagłówek*/
+.header__content {
+  width: 46%;
+}
+.header__links {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: var(--light);
+  list-style: none;
+  padding-top: 4rem;
+}
+.showMenu {
+  transform: translateY(0);
+  width: 100%;
+  height: 50%;
+  align-items: left;
+  gap: 30px;
+  padding-top: 8rem;
+  margin-top: 8rem;
+}
+.closeIcon {
+  display: none;
+}
   .hamburger {
     position: fixed;
     z-index: 100;
@@ -27,38 +55,54 @@ breakpoints
     padding: 4px;
     border: black solid 1px;
     background: var(--light);
-    cursor: pointer;
-  }
-  
-  .closeIcon {
-    display: none;
-  }
-  
-  .header__links {
-    display: flex;
-    flex-direction: column;
-    
-    position: fixed;
-    transform: translateY(-100%);
-    transition: transform 0.2s;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 99;
-    background: var(--light);
-    list-style: none;
-    padding-top: 4rem;
-  }
-  
-  .showMenu {
-    transform: translateY(0);
-    width: 60%;
-    height: 50%;
-    align-items: center;
-    gap: 30px;
+    cursor: pointer;  
   }
  
+/* Sekcja główna - hero */
+.hero__button {
+display: none;
+}
+
+/* ikonki z mediami społecznościowymi */
+.hero__socials {
+  height: 50%;
+}
+
+/* Sekcja o mnie */
+.about__columns{
+  flex-direction: column;
+}
+.about__column {
+  min-width: 100%;
+}
+.about__button {
+ margin-bottom: 3rem;
+ margin-left: 3rem;
+ margin-right: 1rem;
+}
+
+.about__column h3 {
+  text-align: center;
+}
+
+/* Projekty */
+.projects__project {
+  flex-direction: column;
+}
+.project__img {
+  margin-left: -12.1rem;
+}
+
+/* Kontakt */
+.contact__form {
+  margin: -2.4rem -7.6rem;
+}
+
+/* Stopka */
+.footer__container {
+  flex-direction: column;
+ align-items: center;
+}
 }
 
 :root {
@@ -169,9 +213,10 @@ li {
   color: var(--dark);
 }
 
-.hamburger{
+.hamburger {
   overflow: hidden;
 }
+
 /* Sekcja główna - hero */
 .hero {
   background-color: var(--blue);
