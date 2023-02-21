@@ -19,8 +19,7 @@ breakpoints
 /*Nagłówek*/
 
 .header__content {
-  background-color: red;
-  width: 60%;
+  width: 215px;
 }
 .header__links {
   display: flex;
@@ -53,7 +52,7 @@ breakpoints
     position: fixed;
     z-index: 100;
     top: 3.5rem;
-    right: 6rem;
+    right: 1rem;
     padding: 4px;
     border: black solid 1px;
     background: var(--light);
@@ -94,13 +93,14 @@ display: none;
 .projects__project {
   flex-direction: column;
 }
-.project__img {
-  margin-left: -12.1rem;
+.project__img img {
+  max-width: 300px;
+margin-left: -11rem;
 }
 
 /* Kontakt */
 .contact {
-  width: 515px;
+  width: 505px;
 }
 .contact__form {
   margin: -2.4rem -7.6rem;
@@ -108,7 +108,7 @@ display: none;
 
 /* Stopka */
 .footer {
-  width: 515px;
+  width: 505px;
 }
 .footer__container {
  flex-direction: column;
