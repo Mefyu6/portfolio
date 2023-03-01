@@ -1,11 +1,8 @@
 /* 
 czcionka bazowa - 10px
- 
-skale
-10, 12, 14, 16, 20, 24, 34, 48, 60, 96
- 
+
 czcionka Open Sans
- 
+
 breakpoints 
 0-600     telefon
 600-900   tablet pionowo
@@ -19,7 +16,7 @@ breakpoints
 /*Nagłówek*/
 
 .header__content {
-  width: 215px;
+  width: 600px;
 }
 .header__links {
   display: flex;
@@ -52,7 +49,7 @@ breakpoints
     position: fixed;
     z-index: 100;
     top: 3.5rem;
-    right: 1rem;
+    right: 5rem;
     padding: 4px;
     border: black solid 1px;
     background: var(--light);
@@ -61,18 +58,26 @@ breakpoints
  
 /* Sekcja główna - hero */
 .hero {
-  width: 515px;
+  width: 600px;
+  max-height: 70vh;
 }
 .hero__button {
 display: none;
 }
 
+.hero__heading {
+  margin-top: 10rem;
+}
+
 /* ikonki z mediami społecznościowymi */
 .hero__socials {
-  height: 50%;
+  display: none;
 }
 
 /* Sekcja o mnie */
+#about {
+  width: 600px;
+}
 .about__columns{
   flex-direction: column;
 }
@@ -90,30 +95,41 @@ display: none;
 }
 
 /* Projekty */
+#projects {
+  width: 600px;
+  padding-top: 0;
+}
 .projects__project {
   flex-direction: column;
 }
 .project__img img {
   max-width: 300px;
-margin-left: -11rem;
 }
 
 /* Kontakt */
-.contact {
-  width: 505px;
+#contact {
+  width: 600px;
+  padding-top: 2rem;
 }
 .contact__form {
-  margin: -2.4rem -7.6rem;
+  margin: -2.4rem -5.6rem;
+}
+
+.contact__heading p {
+  text-align: left;
 }
 
 /* Stopka */
 .footer {
-  width: 505px;
+  width: 600px;
+
 }
 .footer__container {
  flex-direction: column;
  align-items: center;
+ padding: 2rem 0!important;
 }
+
 }
 
 :root {
