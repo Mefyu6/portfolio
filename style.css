@@ -17,6 +17,7 @@ breakpoints
   
   .header__content {
     width: 600px;
+    margin-left: -3rem;
   }
   .header__links {
     display: flex;
@@ -58,8 +59,14 @@ breakpoints
    
   /* Sekcja główna - hero */
   .hero {
-    width: 600px;
-    max-height: 70vh;
+    max-width: 600px;
+    max-height: 80vh;
+  }
+  .hero__heading {
+    margin-left: -5rem;
+  }
+  .hero__text{
+    margin-left: -5rem;
   }
   .hero__button {
   display: none;
@@ -78,15 +85,19 @@ breakpoints
   #about {
     width: 600px;
   }
+  .about__heading {
+    margin-left: -5rem;
+  }
   .about__columns{
     flex-direction: column;
   }
   .about__column {
     min-width: 100%;
+    margin-left: -5rem;
   }
   .about__button {
    margin-bottom: 3rem;
-   margin-left: 3rem;
+   margin-left: 0;
    margin-right: 1rem;
   }
   
@@ -99,11 +110,18 @@ breakpoints
     width: 600px;
     padding-top: 0;
   }
+  .projects__heading {
+    margin-left: -5rem;
+  }
   .projects__project {
     flex-direction: column;
   }
+  .project__text {
+    margin-left: -5rem;
+  }
   .project__img img {
     max-width: 300px;
+    margin-left: -5rem;
   }
   
   /* Kontakt */
@@ -112,9 +130,12 @@ breakpoints
     padding-top: 2rem;
   }
   .contact__form {
-    margin: -2.4rem -5.6rem;
+    margin-left: -7rem;
   }
   
+  .contact__heading {
+    margin-left: -5rem;
+  }
   .contact__heading p {
     text-align: left;
   }
