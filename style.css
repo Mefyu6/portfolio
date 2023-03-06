@@ -16,8 +16,9 @@ breakpoints
   /*Nagłówek*/
   
   .header__content {
-    width: 600px;
-    margin-left: -3rem;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
   .header__links {
     display: flex;
@@ -59,7 +60,7 @@ breakpoints
    
   /* Sekcja główna - hero */
   .hero {
-    max-width: 600px;
+    width: 100%;
     max-height: 80vh;
   }
   .hero__heading {
@@ -83,7 +84,7 @@ breakpoints
   
   /* Sekcja o mnie */
   #about {
-    width: 600px;
+    width: 100%;
   }
   .about__heading {
     margin-left: -5rem;
@@ -107,7 +108,7 @@ breakpoints
   
   /* Projekty */
   #projects {
-    width: 600px;
+    width: 100%;
     padding-top: 0;
   }
   .projects__heading {
@@ -126,7 +127,7 @@ breakpoints
   
   /* Kontakt */
   #contact {
-    width: 600px;
+    width: 100%;
     padding-top: 2rem;
   }
   .contact__form {
@@ -142,7 +143,7 @@ breakpoints
   
   /* Stopka */
   .footer {
-    width: 600px;
+    width: 100%;
   
   }
   .footer__container {
@@ -260,11 +261,12 @@ breakpoints
     font-weight: 700;
     color: var(--dark);
   }
-  
   .hamburger {
-    overflow: hidden;
+    display: none;
   }
-  
+  @media screen and (max-width:600px) {
+    .hamburger {display: block;}
+  }
   /* Sekcja główna - hero */
   .hero {
     background-color: var(--blue);
