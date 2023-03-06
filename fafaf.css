@@ -59,8 +59,8 @@ breakpoints
       /* width: 600px; */
       max-height: 90vh;
     }
-    .hero__content{
-        margin-left: -17rem;
+    .hero__content {
+        padding-left: ;
     }
     .hero__button {
     display: none;
