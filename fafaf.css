@@ -57,7 +57,10 @@ breakpoints
     /* Sekcja główna - hero */
     .hero {
       /* width: 600px; */
-      max-height: 70vh;
+      max-height: 90vh;
+    }
+    .hero__content{
+        margin-left: -17rem;
     }
     .hero__button {
     display: none;
