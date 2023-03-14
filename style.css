@@ -20,6 +20,10 @@ breakpoints
     padding-left: 5px !important;
     padding-right: 5px !important;
   }
+  .header__logo-name {
+    margin-left: 0.5rem !important;
+    font-size: 0.9rem !important;
+  }
   
   .header__links {
     display: flex;
