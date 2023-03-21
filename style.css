@@ -17,8 +17,7 @@ breakpoints
   }
   .header__content {
     width: 100%;
-    padding-left: 5px !important;
-    padding-right: 5px !important;
+    padding: 15px 5px !important;
   }
   .header__logo-name {
     margin-left: 0.5rem !important;
@@ -53,6 +52,7 @@ breakpoints
     display: none;
   }
     .hamburger {
+      margin-right: 0.5rem;
       padding: 4px;
       border: black solid 1px;
       background: var(--light);
