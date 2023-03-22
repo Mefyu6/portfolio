@@ -21,7 +21,6 @@ breakpoints
   }
   .header__logo-name {
     margin-left: 0.5rem !important;
-    font-size: 0.9rem !important;
   }
   
   .header__links {
@@ -45,8 +44,8 @@ breakpoints
     height: 50%;
     align-items: left;
     gap: 30px;
-    padding-top: 8rem;
-    margin-top: 8rem;
+    padding-top: 3rem;
+    margin-top: 7rem;
   }
   .closeIcon {
     display: none;
@@ -73,11 +72,11 @@ breakpoints
   
   .hero__heading {
     margin-top: 10rem;
-    font-size: 2.4rem !important;
+    font-size: 3rem !important;
   }
   .hero__text {
-    font-size: 0.4rem !important;
     margin-top: auto !important;
+    font-size: 1rem !important;
   }
   
   /* ikonki z mediami społecznościowymi */
